@@ -41,7 +41,9 @@ body {
 }
 
 .header {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 40px;
 }
 
@@ -58,6 +60,19 @@ body {
         inset 8px 8px 16px var(--shadow-dark),
         inset -8px -8px 16px var(--shadow-light);
     transition: all 0.3s ease;
+}
+
+.header__counter {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--accent-blue-dark);
+    padding: 12px 20px;
+    background: var(--card-bg);
+    border-radius: 20px;
+    box-shadow:
+        6px 6px 12px var(--shadow-dark),
+        -6px -6px 12px var(--shadow-light);
+    white-space: nowrap;
 }
 
 .main {
@@ -139,6 +154,7 @@ body {
         -3px -3px 6px var(--shadow-light);
     border: none;
     transition: all 0.3s ease;
+    pointer-events: none;
 }
 
 

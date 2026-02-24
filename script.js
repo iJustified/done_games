@@ -98,25 +98,60 @@ document.addEventListener('DOMContentLoaded', function() {
             cover: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145350/91ac334a2c137d08968ccc0bc474a02579602100/header.jpg?t=1765831644',
             genres: ['Action', 'Roguelike', 'Roguelite', 'Hack and Slash', 'Mythology'],
             rating: 4,
-            completed: true
+            completed: true,
+            steamUrl: 'https://store.steampowered.com/app/1145350/Hades_2/'
         },
         {
             title: 'Cairn',
             cover: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1588550/header.jpg?t=1769725647',
-            genres: ['Stylized', 'Indie', 'Adventure', 'Exploration', 'Atmospheric+'],
+            genres: ['Stylized', 'Indie', 'Adventure', 'Exploration', 'Atmospheric'],
             rating: 5,
             completed: true,
             steamUrl: 'https://store.steampowered.com/app/1588550/Cairn/'
         },
         {
+            title: 'Scarlet Maiden',
+            cover: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1968840/header.jpg?t=1763636798',
+            genres: ['Sexual Content', 'Hentai', 'Pixel', 'Graphics', 'Nudity'],
+            rating: 3,
+            completed: true,
+            steamUrl: 'https://store.steampowered.com/app/1968840/Scarlet_Maiden/'
+        },
+        {
             title: 'Lies of P',
             cover: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1627720/header.jpg?t=1764565054',
             genres: ['Souls-like', 'Dark Fantasy', 'Action', 'Singleplayer', 'Story Rich'],
-            rating: 4,
-            completed: false,
+            rating: 3,
+            completed: true,
             steamUrl: 'https://store.steampowered.com/app/1627720/Lies_of_P/'
         },
+        {
+            title: 'The Exit 8',
+            cover: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2653790/header.jpg?t=1756464433',
+            genres: ['Exploration', 'Immersive Sim', 'Puzzle', 'Underground', '3D'],
+            rating: 4,
+            completed: true,
+            steamUrl: 'https://store.steampowered.com/app/2653790/The_Exit_8/'
+        },
+        {
+            title: 'The Surge',
+            cover: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/378540/header.jpg?t=1727864911',
+            genres: ['Souls-like', 'Action RPG', 'Sci-fi', 'Third Person', 'Difficult'],
+            rating: 2,
+            completed: false,
+            steamUrl: 'https://store.steampowered.com/app/378540/The_Surge/'
+        },
     ];
+
+    // Подсчёт пройденных игр и общего количества
+    const totalGames = exampleGames.length;
+    const completedGames = exampleGames.filter(game => game.completed).length;
+
+    const gamesCounterElement = document.getElementById('gamesCounter');
+    if (gamesCounterElement) {
+        gamesCounterElement.textContent = `Пройдено: ${completedGames} / ${totalGames}`;
+        gamesCounterElement.title = `Пройдено игр: ${completedGames} из ${totalGames}`;
+    }
 
     // Добавление примеров карточек (можно удалить)
     exampleGames.forEach(game => addGameCard(game));
