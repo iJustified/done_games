@@ -81,8 +81,45 @@ function addGameCard(data) {
     return gameCard;
 }
 
+const THEME_STORAGE_KEY = 'theme';
+
+function getTheme() {
+    return document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+}
+
+function setTheme(theme) {
+    if (theme === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+        document.documentElement.removeAttribute('data-theme');
+    }
+    try {
+        localStorage.setItem(THEME_STORAGE_KEY, theme);
+    } catch (e) { /* ignore */ }
+    syncThemeToggle();
+}
+
+function syncThemeToggle() {
+    const btn = document.getElementById('themeToggle');
+    if (!btn) return;
+    const dark = getTheme() === 'dark';
+    btn.setAttribute('aria-pressed', dark ? 'true' : 'false');
+    btn.setAttribute('aria-label', dark ? 'Включить светлую тему' : 'Включить тёмную тему');
+}
+
+function initThemeToggle() {
+    const btn = document.getElementById('themeToggle');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+        setTheme(getTheme() === 'dark' ? 'light' : 'dark');
+    });
+    syncThemeToggle();
+}
+
 // Пример использования - можно удалить или закомментировать
 document.addEventListener('DOMContentLoaded', function() {
+    initThemeToggle();
+
     // Примеры карточек игр
     const exampleGames = [
         {
@@ -137,9 +174,65 @@ document.addEventListener('DOMContentLoaded', function() {
             title: 'The Surge',
             cover: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/378540/header.jpg?t=1727864911',
             genres: ['Souls-like', 'Action RPG', 'Sci-fi', 'Third Person', 'Difficult'],
+            rating: 1,
+            completed: true,
+            steamUrl: 'https://store.steampowered.com/app/378540/The_Surge/'
+        },
+        {
+            title: 'MIO: Memories in Orbit',
+            cover: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1672810/header.jpg?t=1770197936',
+            genres: ['Souls-like', 'Action RPG', 'Sci-fi', 'Third Person', 'Difficult'],
+            rating: 5,
+            completed: true,
+            steamUrl: 'https://store.steampowered.com/app/1672810/MIO_Memories_in_Orbit/'
+        },
+        {
+            title: 'Never Grave: The Witch and The Curse',
+            cover: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2395770/0b7d199473c412f296170158b805aeb50451cbd4/header.jpg?t=1773129554',
+            genres: ['Metroidvania', 'Action Roguelike', 'Roguevania', 'Platformer'],
             rating: 2,
             completed: false,
-            steamUrl: 'https://store.steampowered.com/app/378540/The_Surge/'
+            steamUrl: 'https://store.steampowered.com/app/2395770/Never_Grave_The_Witch_and_The_Curse/'
+        },
+        {
+            title: 'Moonlighter',
+            cover: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/606150/b6b0789b397ed98c8c5871dd2f99945a8fea0332/header.jpg?t=1773240026',
+            genres: ['Hack and Slash', 'Pixel Graphics', 'Dungeon Crawler', 'RPG'],
+            rating: 3,
+            completed: false,
+            steamUrl: 'https://store.steampowered.com/app/606150/Moonlighter/'
+        },
+        {
+            title: 'Resident Evil Requiem',
+            cover: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3764200/ce5437442768e38eb575f205ab9397d0264017b0/header.jpg?t=1772587704',
+            genres: ['Survival Horror', 'Zombies', 'Horror', 'Third-Person Shooter'],
+            rating: 5,
+            completed: true,
+            steamUrl: 'https://store.steampowered.com/app/3764200/Resident_Evil_Requiem/'
+        },
+        {
+            title: `Thank Goodness You're Here!`,
+            cover: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2366980/header.jpg?t=1733154706',
+            genres: ['Adventure', 'Comedy', 'Funny', 'Hand-drawn', 'Exploration'],
+            rating: 5,
+            completed: true,
+            steamUrl: 'https://store.steampowered.com/app/2366980/Thank_Goodness_Youre_Here/'
+        },
+        {
+            title: 'Banishers: Ghosts of New Eden',
+            cover: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1493640/header.jpg?t=1763044792',
+            genres: ['Narration', 'Third Person', 'Lore-Rich', 'Emotional', 'Exploration'],
+            rating: 4,
+            completed: false,
+            steamUrl: 'https://store.steampowered.com/app/1493640/Banishers_Ghosts_of_New_Eden/'
+        },
+        {
+            title: 'Echoes of the End: Enhanced Edition',
+            cover: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2821610/229f5bb97d16bdf1af96ac5436f70aa4215ed69d/header.jpg?t=1771578630',
+            genres: ['Action-Adventure', 'Magic', 'Singleplayer', 'Third Person'],
+            rating: 3,
+            completed: false,
+            steamUrl: 'https://store.steampowered.com/app/2821610/Echoes_of_the_End_Enhanced_Edition/'
         },
     ];
 
