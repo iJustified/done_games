@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             title: 'Banishers: Ghosts of New Eden',
             cover: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1493640/header.jpg?t=1763044792',
-            genres: ['Narration', 'Third Person', 'Lore-Rich', 'Emotional', 'Exploration'],
+            genres: ['Narration', 'Third Person', 'Lore-Rich', 'Emotional'],
             rating: 4,
             completed: false,
             steamUrl: 'https://store.steampowered.com/app/1493640/Banishers_Ghosts_of_New_Eden/'
@@ -231,9 +231,103 @@ document.addEventListener('DOMContentLoaded', function() {
             cover: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2821610/229f5bb97d16bdf1af96ac5436f70aa4215ed69d/header.jpg?t=1771578630',
             genres: ['Action-Adventure', 'Magic', 'Singleplayer', 'Third Person'],
             rating: 3,
-            completed: false,
+            completed: true,
             steamUrl: 'https://store.steampowered.com/app/2821610/Echoes_of_the_End_Enhanced_Edition/'
         },
+        {
+            title: 'Roadcraft',
+            cover: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2104890/header.jpg?t=1774375225',
+            genres: [
+                'Simulation',
+                'Building',
+                'Driving',
+                'Physics',
+                'Online Co-Op'
+            ],
+            rating: 4,
+            completed: false,
+            steamUrl: 'https://store.steampowered.com/app/2104890/RoadCraft/'
+        },
+        {
+            title: 'Ghost of Yotei',
+            cover: 'https://image.api.playstation.com/vulcan/ap/rnd/202504/2116/034dc9337a5da99d68c4b066c3b5eafd7791860f8d1a742d.jpg',
+            genres: [
+                'Open World',
+                'Action',
+                'Story Rich',
+                'Singleplayer',
+                'Adventure'
+            ],
+            rating: 5,
+            completed: true,
+            // steamUrl: 'https://store.steampowered.com/app/2104890/RoadCraft/'
+        },
+        {
+            title: 'Gun',
+            cover: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2610/header.jpg?t=1499877030',
+            genres: [
+                'Western',
+                'Action',
+                'Open World',
+                'Third-Person Shooter',
+                'Gore'
+            ],
+            rating: 5,
+            completed: true,
+            steamUrl: 'https://store.steampowered.com/app/2610/GUN/'
+        },
+        {
+            title: 'Samson',
+            cover: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3634520/139e0f223c1c0cb4f2e763c41ae7fe6e4e3e59a2/header.jpg?t=1776929615',
+            genres: [
+                'Action-Adventure',
+                'Racing',
+                'Driving',
+            ],
+            rating: 1,
+            completed: false,
+            steamUrl: 'https://store.steampowered.com/app/3634520/Samson/'
+        },
+        {
+            title: 'Lucky Tower',
+            cover: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1700270/header.jpg?t=1776354865',
+            genres: [
+                'Action Roguelike',
+                'Dungeon Crawler',
+                'Procedural Generation'
+            ],
+            rating: 5,
+            completed: false,
+            steamUrl: 'https://store.steampowered.com/app/1700270/Lucky_Tower_Ultimate/'
+        },
+        {
+            title: 'Superliminal',
+            cover: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1049410/header.jpg?t=1755294276',
+            genres: [
+                'Puzzle',
+                'First-Person',
+                'Surreal',
+                'Psychological',
+                'Physics'
+            ],
+            rating: 5,
+            completed: true,
+            steamUrl: 'https://store.steampowered.com/app/1049410/Superliminal/'
+        },
+        {
+            title: 'Alice: Madness Returns',
+            cover: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/19680/header.jpg?t=1655743771',
+            genres: [
+                'Dark Fantasy',
+                '3D Platformer',
+                'Female Protagonist',
+                'Horror'
+            ],
+            rating: 4,
+            completed: true,
+            steamUrl: 'https://store.steampowered.com/app/19680/Alice_Madness_Returns/'
+        },
+
     ];
 
     // Подсчёт пройденных игр и общего количества
