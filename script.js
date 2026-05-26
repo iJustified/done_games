@@ -297,7 +297,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Procedural Generation'
             ],
             rating: 5,
-            completed: false,
+            completed: true,
             steamUrl: 'https://store.steampowered.com/app/1700270/Lucky_Tower_Ultimate/'
         },
         {
@@ -326,6 +326,62 @@ document.addEventListener('DOMContentLoaded', function() {
             rating: 4,
             completed: true,
             steamUrl: 'https://store.steampowered.com/app/19680/Alice_Madness_Returns/'
+        },
+        {
+            title: 'Neverness to Everness',
+            cover: 'https://image.api.playstation.com/vulcan/ap/rnd/202508/1211/fc20de6cd44bdfb91348ac1508935b6f358cda80b1721d5c.jpg',
+            genres: [
+                'Action RPG',
+                'Gacha',
+                'Slasher',  
+                'Singleplayer',
+                'Open World',
+            ],
+            rating: 3,
+            completed: false,
+            // steamUrl: 'https://store.steampowered.com/app/19680/Alice_Madness_Returns/'
+        },
+        {
+            title: 'Captain Quazar',
+            cover: 'https://upload.wikimedia.org/wikipedia/en/d/dd/CaptQuazar.jpg',
+            genres: [
+                'Third-person shooter',
+                'Action-Adventure',
+                'Parody',
+            ],
+            rating: 2,
+            completed: false,
+            // steamUrl: 'https://store.steampowered.com/app/19680/Alice_Madness_Returns/'
+        },
+        {
+            title: 'Gex',
+            cover: 'https://upload.wikimedia.org/wikipedia/ru/thumb/2/28/Gex_Enter_the_Gecko_%D0%BE%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0.jpg/330px-Gex_Enter_the_Gecko_%D0%BE%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0.jpg',
+            genres: [
+                '3D Platformer',
+                '1990\'s',
+                'Parody',
+                'Comedy',
+                'Funny',
+                '2D',
+            ],
+            rating: 5,
+            completed: false,
+            steamUrl: 'https://store.steampowered.com/app/3183970/GEX_Trilogy/'
+        },
+        {
+            title: 'Nine Souls',
+            cover: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1809540/header.jpg?t=1762838904',
+            genres: [
+                'Metroidvania',
+                'Souls-like',
+                'Difficult',
+                '2D',
+                'Action',
+                'Indie',
+            ],
+            rating: 5,
+            completed: false,
+            steamUrl: 'https://store.steampowered.com/app/1809540/Nine_Sols/'
         },
 
     ];
