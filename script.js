@@ -7,6 +7,7 @@ class GameCard {
         this.rating = data.rating || 0; // от 1 до 5
         this.completed = data.completed !== undefined ? data.completed : false;
         this.steamUrl = data.steamUrl || null;
+        this.favorite = Boolean(data.favorite);
     }
 
     // Создание HTML разметки карточки
@@ -24,10 +25,16 @@ class GameCard {
             ? `<a href="${this.steamUrl}" target="_blank" rel="noopener noreferrer" class="steam-badge">Steam</a>`
             : '';
 
+        const cardClass = this.favorite ? 'game-card game-card--favorite' : 'game-card';
+        const favoriteBadgeHTML = this.favorite
+            ? `<span class="game-card__featured-badge" aria-label="Топ года"><span class="game-card__featured-badge-text">Топ года</span></span>`
+            : '';
+
         return `
-            <div class="game-card">
+            <div class="${cardClass}">
                 <h2 class="game-card__title">${this.title}</h2>
-                <div class="game-head">
+                <div class="game-card__cover-wrap">
+                    ${favoriteBadgeHTML}
                     <img src="${this.cover}" alt="${this.title}" class="game-card__cover" onerror="this.src='https://via.placeholder.com/460x215?text=Обложка+не+найдена'">
                 </div>
                 <div class="game-card__genres">
@@ -144,6 +151,7 @@ document.addEventListener('DOMContentLoaded', function() {
             genres: ['Stylized', 'Indie', 'Adventure', 'Exploration', 'Atmospheric'],
             rating: 5,
             completed: true,
+            favorite: true,
             steamUrl: 'https://store.steampowered.com/app/1588550/Cairn/'
         },
         {
@@ -208,6 +216,7 @@ document.addEventListener('DOMContentLoaded', function() {
             genres: ['Survival Horror', 'Zombies', 'Horror', 'Third-Person Shooter'],
             rating: 5,
             completed: true,
+            favorite: true,
             steamUrl: 'https://store.steampowered.com/app/3764200/Resident_Evil_Requiem/'
         },
         {
@@ -260,6 +269,7 @@ document.addEventListener('DOMContentLoaded', function() {
             ],
             rating: 5,
             completed: true,
+            favorite: true,
             // steamUrl: 'https://store.steampowered.com/app/2104890/RoadCraft/'
         },
         {
@@ -298,6 +308,7 @@ document.addEventListener('DOMContentLoaded', function() {
             ],
             rating: 5,
             completed: true,
+            favorite: true,
             steamUrl: 'https://store.steampowered.com/app/1700270/Lucky_Tower_Ultimate/'
         },
         {
@@ -383,10 +394,52 @@ document.addEventListener('DOMContentLoaded', function() {
             completed: false,
             steamUrl: 'https://store.steampowered.com/app/1809540/Nine_Sols/'
         },
-
+        {
+            title: 'Enotria: The Last Song',
+            cover: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2102450/header.jpg?t=1730220222',
+            genres: [
+                'Souls-like',
+                'RPG',
+                'Difficult',
+                'Singleplayer',
+                'Atmospheric',
+            ],
+            rating: 3,
+            completed: false,
+            steamUrl: 'https://store.steampowered.com/app/2102450/Enotria_The_Last_Song/'
+        },
+        {
+            title: '007_First_Light',
+            cover: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3768760/dbe86ebd2edb4c77d113e9e2feefeb90189fabc9/header.jpg?t=1780344100',
+            genres: [
+                'Singleplayer',
+                'Action',
+                'Stealth',
+                'Action-Adventure',
+                'Adventure',
+            ],
+            rating: 5,
+            completed: true,
+            favorite: true,
+            steamUrl: 'https://store.steampowered.com/app/3768760/007_First_Light/'
+        },
+        {
+            title: 'The Surge 2',
+            cover: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/644830/header.jpg?t=1727794351',
+            genres: [
+                'Souls-like',
+                'RPG',
+                'Action',
+                'Open World',
+                'Sci-fi',
+                'Violent',
+            ],
+            rating: 3,
+            completed: false,
+            steamUrl: 'https://store.steampowered.com/app/644830/The_Surge_2/'
+        },
     ];
 
-    // Подсчёт пройденных игр и общего количества
     const totalGames = exampleGames.length;
     const completedGames = exampleGames.filter(game => game.completed).length;
 
@@ -396,7 +449,6 @@ document.addEventListener('DOMContentLoaded', function() {
         gamesCounterElement.title = `Пройдено игр: ${completedGames} из ${totalGames}`;
     }
 
-    // Добавление примеров карточек (можно удалить)
     exampleGames.forEach(game => addGameCard(game));
 });
 
