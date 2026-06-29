@@ -376,7 +376,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 '2D',
             ],
             rating: 5,
-            completed: false,
+            completed: true,
             steamUrl: 'https://store.steampowered.com/app/3183970/GEX_Trilogy/'
         },
         {
@@ -409,7 +409,7 @@ document.addEventListener('DOMContentLoaded', function() {
             steamUrl: 'https://store.steampowered.com/app/2102450/Enotria_The_Last_Song/'
         },
         {
-            title: '007_First_Light',
+            title: '007 First Light',
             cover: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3768760/dbe86ebd2edb4c77d113e9e2feefeb90189fabc9/header.jpg?t=1780344100',
             genres: [
                 'Singleplayer',
@@ -437,6 +437,63 @@ document.addEventListener('DOMContentLoaded', function() {
             rating: 3,
             completed: false,
             steamUrl: 'https://store.steampowered.com/app/644830/The_Surge_2/'
+        },
+        {
+            title: 'Dave the Diver',
+            cover: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1868140/661ab93fe661f8f96c6c3cb728719c15c2922eb6/header_alt_assets_2.jpg?t=1782191386',
+            genres: [
+                'Pixel Graphics',
+                'Management',
+                'Casual',
+                'Adventure',
+                'Fishing',
+            ],
+            rating: 5,
+            completed: true,
+            steamUrl: 'https://store.steampowered.com/app/1868140/DAVE_THE_DIVER/'
+        },
+        {
+            title: 'Mandragora: Whispers of the Witch Tree',
+            cover: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1721060/header.jpg?t=1782398177',
+            genres: [
+                'Violent',
+                'Souls-like',
+                'Action RPG',
+                'Metroidvania',
+                '2.5D',
+            ],
+            rating: 3,
+            completed: true,
+            steamUrl: 'https://store.steampowered.com/app/1721060/Mandragora_Whispers_of_the_Witch_Tree/?l=russian'
+        },
+        {
+            title: 'Resident Evil 3',
+            cover: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/952060/header.jpg?t=1780362329',
+            genres: [
+                'Action',
+                'Zombies',
+                'Female Protagonist',
+                'Horror',
+                'Multiplayer',
+            ],
+            rating: 3,
+            completed: true,
+            steamUrl: 'https://store.steampowered.com/app/952060/Resident_Evil_3/'
+        },
+        {
+            title: 'La-Mulana',
+            cover: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/230700/header.jpg?t=1749102745',
+            genres: [
+                'Souls-like',
+                'RPG',
+                'Action',
+                'Open World',
+                'Sci-fi',
+                'Violent',
+            ],
+            rating: 4,
+            completed: false,
+            steamUrl: 'https://store.steampowered.com/app/230700/LaMulana/'
         },
     ];
 
