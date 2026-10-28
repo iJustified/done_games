@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const exampleGames = [
         {
             title: 'Another Crab\'s Treasure',
-            cover: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1887840/header.jpg?t=1748555967',
+            cover: 'imgs/another_crab.jpg',
             genres: ['Souls-like', '3D Platformer', 'Funny', 'Action RPG', 'Cartoony'],
             rating: 2,
             completed: false,
@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             title: 'Hades 2',
-            cover: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145350/91ac334a2c137d08968ccc0bc474a02579602100/header.jpg?t=1765831644',
+            cover: 'imgs/hades_2.jpg',
             genres: ['Action', 'Roguelike', 'Roguelite', 'Hack and Slash', 'Mythology'],
             rating: 4,
             completed: true,
@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             title: 'Cairn',
-            cover: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1588550/header.jpg?t=1769725647',
+            cover: 'imgs/cairn.jpg',
             genres: ['Stylized', 'Indie', 'Adventure', 'Exploration', 'Atmospheric'],
             rating: 5,
             completed: true,
@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             title: 'Scarlet Maiden',
-            cover: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1968840/header.jpg?t=1763636798',
+            cover: 'imgs/scarlet_maiden.jpg',
             genres: ['Sexual Content', 'Hentai', 'Pixel', 'Graphics', 'Nudity'],
             rating: 3,
             completed: true,
@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             title: 'Lies of P',
-            cover: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1627720/header.jpg?t=1764565054',
+            cover: 'imgs/lies_p.jpg',
             genres: ['Souls-like', 'Dark Fantasy', 'Action', 'Singleplayer', 'Story Rich'],
             rating: 3,
             completed: true,
@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             title: 'The Exit 8',
-            cover: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2653790/header.jpg?t=1756464433',
+            cover: 'imgs/exit_8.jpg',
             genres: ['Exploration', 'Immersive Sim', 'Puzzle', 'Underground', '3D'],
             rating: 4,
             completed: true,
@@ -180,7 +180,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             title: 'The Surge',
-            cover: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/378540/header.jpg?t=1727864911',
+            cover: 'imgs/surge.jpg',
             genres: ['Souls-like', 'Action RPG', 'Sci-fi', 'Third Person', 'Difficult'],
             rating: 1,
             completed: true,
@@ -188,7 +188,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             title: 'MIO: Memories in Orbit',
-            cover: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1672810/header.jpg?t=1770197936',
+            cover: 'imgs/mio.jpg',
             genres: ['Souls-like', 'Action RPG', 'Sci-fi', 'Third Person', 'Difficult'],
             rating: 5,
             completed: true,
@@ -196,7 +196,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             title: 'Never Grave: The Witch and The Curse',
-            cover: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2395770/0b7d199473c412f296170158b805aeb50451cbd4/header.jpg?t=1773129554',
+            cover: 'imgs/never_grave.jpg',
             genres: ['Metroidvania', 'Action Roguelike', 'Roguevania', 'Platformer'],
             rating: 2,
             completed: false,
@@ -204,7 +204,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             title: 'Moonlighter',
-            cover: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/606150/b6b0789b397ed98c8c5871dd2f99945a8fea0332/header.jpg?t=1773240026',
+            cover: 'imgs/moonlighter.jpg',
             genres: ['Hack and Slash', 'Pixel Graphics', 'Dungeon Crawler', 'RPG'],
             rating: 3,
             completed: false,
@@ -212,7 +212,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             title: 'Resident Evil Requiem',
-            cover: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3764200/ce5437442768e38eb575f205ab9397d0264017b0/header.jpg?t=1772587704',
+            cover: 'imgs/re_requiem.jpg',
             genres: ['Survival Horror', 'Zombies', 'Horror', 'Third-Person Shooter'],
             rating: 5,
             completed: true,
@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             title: `Thank Goodness You're Here!`,
-            cover: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2366980/header.jpg?t=1733154706',
+            cover: 'imgs/thank_goodness.jpg',
             genres: ['Adventure', 'Comedy', 'Funny', 'Hand-drawn', 'Exploration'],
             rating: 5,
             completed: true,
@@ -229,7 +229,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             title: 'Banishers: Ghosts of New Eden',
-            cover: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1493640/header.jpg?t=1763044792',
+            cover: 'imgs/banishers.jpg',
             genres: ['Narration', 'Third Person', 'Lore-Rich', 'Emotional'],
             rating: 4,
             completed: false,
@@ -237,7 +237,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             title: 'Echoes of the End: Enhanced Edition',
-            cover: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2821610/229f5bb97d16bdf1af96ac5436f70aa4215ed69d/header.jpg?t=1771578630',
+            cover: 'imgs/echoes_end.jpg',
             genres: ['Action-Adventure', 'Magic', 'Singleplayer', 'Third Person'],
             rating: 3,
             completed: true,
@@ -245,7 +245,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             title: 'Roadcraft',
-            cover: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2104890/header.jpg?t=1774375225',
+            cover: 'imgs/roadcraft.jpg',
             genres: [
                 'Simulation',
                 'Building',
@@ -259,7 +259,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             title: 'Ghost of Yotei',
-            cover: 'https://image.api.playstation.com/vulcan/ap/rnd/202504/2116/034dc9337a5da99d68c4b066c3b5eafd7791860f8d1a742d.jpg',
+            cover: 'imgs/yotei.jpg',
             genres: [
                 'Open World',
                 'Action',
@@ -274,7 +274,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             title: 'Gun',
-            cover: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2610/header.jpg?t=1499877030',
+            cover: 'imgs/gun.jpg',
             genres: [
                 'Western',
                 'Action',
@@ -288,7 +288,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             title: 'Samson',
-            cover: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3634520/139e0f223c1c0cb4f2e763c41ae7fe6e4e3e59a2/header.jpg?t=1776929615',
+            cover: 'imgs/samson.jpg',
             genres: [
                 'Action-Adventure',
                 'Racing',
@@ -300,7 +300,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             title: 'Lucky Tower',
-            cover: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1700270/header.jpg?t=1776354865',
+            cover: 'imgs/lucky_tower.jpg',
             genres: [
                 'Action Roguelike',
                 'Dungeon Crawler',
@@ -313,7 +313,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             title: 'Superliminal',
-            cover: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1049410/header.jpg?t=1755294276',
+            cover: 'imgs/superliminal.jpg',
             genres: [
                 'Puzzle',
                 'First-Person',
@@ -327,7 +327,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             title: 'Alice: Madness Returns',
-            cover: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/19680/header.jpg?t=1655743771',
+            cover: 'imgs/alice.jpg',
             genres: [
                 'Dark Fantasy',
                 '3D Platformer',
@@ -339,8 +339,17 @@ document.addEventListener('DOMContentLoaded', function() {
             steamUrl: 'https://store.steampowered.com/app/19680/Alice_Madness_Returns/'
         },
         {
+            title: 'JUMP KING QUEST',
+            cover: 'imgs/jump_king_quest.jpg',
+            genres: ['Exploration', 'Precision', 'Platformer', 'Souls-like', '2D Platformer'],
+            rating: 3,
+            completed: false,
+            favorite: false,
+            steamUrl: 'https://store.steampowered.com/app/2317640/JUMP_KING_QUEST/'
+        },
+        {
             title: 'Neverness to Everness',
-            cover: 'https://image.api.playstation.com/vulcan/ap/rnd/202508/1211/fc20de6cd44bdfb91348ac1508935b6f358cda80b1721d5c.jpg',
+            cover: 'imgs/neverness.jpg',
             genres: [
                 'Action RPG',
                 'Gacha',
@@ -354,7 +363,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             title: 'Captain Quazar',
-            cover: 'https://upload.wikimedia.org/wikipedia/en/d/dd/CaptQuazar.jpg',
+            cover: 'imgs/captain_quazar.jpg',
             genres: [
                 'Third-person shooter',
                 'Action-Adventure',
@@ -366,7 +375,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             title: 'Gex',
-            cover: 'https://upload.wikimedia.org/wikipedia/ru/thumb/2/28/Gex_Enter_the_Gecko_%D0%BE%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0.jpg/330px-Gex_Enter_the_Gecko_%D0%BE%D0%B1%D0%BB%D0%BE%D0%B6%D0%BA%D0%B0.jpg',
+            cover: 'imgs/gex.jpg',
             genres: [
                 '3D Platformer',
                 '1990\'s',
@@ -381,7 +390,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             title: 'Nine Souls',
-            cover: 'https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1809540/header.jpg?t=1762838904',
+            cover: 'imgs/nine_sols.jpg',
             genres: [
                 'Metroidvania',
                 'Souls-like',
@@ -396,7 +405,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             title: 'Enotria: The Last Song',
-            cover: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2102450/header.jpg?t=1730220222',
+            cover: 'imgs/enotria.jpg',
             genres: [
                 'Souls-like',
                 'RPG',
@@ -410,7 +419,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             title: '007 First Light',
-            cover: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3768760/dbe86ebd2edb4c77d113e9e2feefeb90189fabc9/header.jpg?t=1780344100',
+            cover: 'imgs/first_light.jpg',
             genres: [
                 'Singleplayer',
                 'Action',
@@ -425,7 +434,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             title: 'The Surge 2',
-            cover: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/644830/header.jpg?t=1727794351',
+            cover: 'imgs/surge_2.jpg',
             genres: [
                 'Souls-like',
                 'RPG',
@@ -434,13 +443,23 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Sci-fi',
                 'Violent',
             ],
-            rating: 3,
-            completed: false,
+            rating: 2,
+            completed: true,
             steamUrl: 'https://store.steampowered.com/app/644830/The_Surge_2/'
         },
         {
+            title: 'Pratfall',
+            cover: 'imgs/pratfall.jpg',
+            genres: [
+                'Multiplayer', 'Online', 'Co-Op', 'Comedy', 'Physics'
+            ],
+            rating: 2,
+            completed: false,
+            steamUrl: 'https://store.steampowered.com/app/4244510/Pratfall/'
+        },
+        {
             title: 'Dave the Diver',
-            cover: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1868140/661ab93fe661f8f96c6c3cb728719c15c2922eb6/header_alt_assets_2.jpg?t=1782191386',
+            cover: 'imgs/dave_diver.jpg',
             genres: [
                 'Pixel Graphics',
                 'Management',
@@ -454,7 +473,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             title: 'Mandragora: Whispers of the Witch Tree',
-            cover: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1721060/header.jpg?t=1782398177',
+            cover: 'imgs/mandragora.jpg',
             genres: [
                 'Violent',
                 'Souls-like',
@@ -468,7 +487,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             title: 'Resident Evil 3',
-            cover: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/952060/header.jpg?t=1780362329',
+            cover: 'imgs/resident_evil_3.jpg',
             genres: [
                 'Action',
                 'Zombies',
@@ -482,7 +501,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             title: 'La-Mulana',
-            cover: 'https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/230700/header.jpg?t=1749102745',
+            cover: 'imgs/lamulana.jpg',
             genres: [
                 'Souls-like',
                 'RPG',
@@ -495,6 +514,168 @@ document.addEventListener('DOMContentLoaded', function() {
             completed: false,
             steamUrl: 'https://store.steampowered.com/app/230700/LaMulana/'
         },
+        {
+            title: 'Blades of Fire',
+            cover: 'imgs/blades_of_fire.jpg',
+            genres: ['Action', 'Adventure', 'Dark Fantasy', 'Singleplayer', 'Souls-like'],
+            rating: 2,
+            completed: false,
+            steamUrl: 'https://store.steampowered.com/app/2091020/Blades_of_Fire/'
+        },
+        {
+            title: 'Wartales',
+            cover: 'imgs/wartales.jpg',
+            genres: ['Tactical RPG', 'Open World', 'Turn-Based Tactics', 'RPG', 'Strategy'],
+            rating: 5,
+            completed: false,
+            favorite: true,
+            steamUrl: 'https://store.steampowered.com/app/1527950/Wartales/'
+        },
+        {
+            title: 'DARK SOULS™ III',
+            cover: 'imgs/dark_souls.jpg',
+            genres: ['Souls-like', 'Dark Fantasy', 'Difficult', 'Action RPG', 'Atmospheric'],
+            rating: 5,
+            completed: true,
+            steamUrl: 'https://store.steampowered.com/app/374320/DARK_SOULS_III/'
+        },
+        {
+            title: 'Mortal Shell II',
+            cover: 'imgs/mortal_shell.jpg',
+            genres: ['Souls-like', 'Dark Fantasy', 'Action RPG', 'Singleplayer', 'Open World'],
+            rating: 4,
+            completed: true,
+            steamUrl: 'https://store.steampowered.com/app/2584270/Mortal_Shell_II/'
+        },
+        {
+            title: 'MILF\'s Plaza',
+            cover: 'imgs/milf_plaza.jpg',
+            genres: ['Adventure', 'Casual', 'RPG', 'Sexual Content', 'Nudity'],
+            rating: 3,
+            completed: true,
+            steamUrl: 'https://store.steampowered.com/app/2706300/MILFs_Plaza/'
+        },
+        {
+            title: 'Barotrauma',
+            cover: 'imgs/barotrauma.jpg',
+            genres: ['Online Co-Op', 'Survival Horror', '2D', 'Space', 'Submarine'],
+            rating: 4,
+            completed: false,
+            steamUrl: 'https://store.steampowered.com/app/602960/Barotrauma/'
+        },
+        {
+            title: 'theHunter: Call of the Wild™',
+            cover: 'imgs/hunter.jpg',
+            genres: ['Hunting', 'Open World', 'Simulation', 'Multiplayer', 'Atmospheric'],
+            rating: 4,
+            completed: true,
+            steamUrl: 'https://store.steampowered.com/app/518790/theHunter_Call_of_the_Wild/'
+        },
+        {
+            title: 'The Life and Suffering of Sir Brante',
+            cover: 'imgs/sir_brante.jpg',
+            genres: ['Choices Matter', 'Story Rich', 'RPG', 'Interactive Fiction', 'Choose Your Own Adventure'],
+            rating: 3,
+            completed: true,
+            steamUrl: 'https://store.steampowered.com/app/1272160/The_Life_and_Suffering_of_Sir_Brante/'
+        },
+        {
+            title: 'Crimson Desert',
+            cover: 'imgs/crimson_desert.jpg',
+            genres: ['Open World', 'Action RPG', 'Adventure', 'Singleplayer', 'Action'],
+            rating: 4,
+            completed: false,
+            steamUrl: 'https://store.steampowered.com/app/3321460/Crimson_Desert_Enhanced/'
+        },
+        {
+            title: 'How to Fish',
+            cover: 'imgs/htf.jpg',
+            genres: ['Multiplayer', 'Online Co-Op', 'Co-op', 'Indie', 'Action'],
+            rating: 1,
+            completed: false,
+            steamUrl: 'https://store.steampowered.com/app/4001890/How_to_Fish/'
+        },
+        {
+            title: 'NINJA GAIDEN: Ragebound',
+            cover: 'imgs/ragebound.jpg',
+            genres: ['Action', 'Ninja', 'Platformer', '2D Platformer', 'Indie'],
+            rating: 2,
+            completed: false,
+            steamUrl: 'https://store.steampowered.com/app/2542120/NINJA_GAIDEN_Ragebound/'
+        },
+        {
+            title: 'Well Dweller',
+            cover: 'imgs/well_dweller.jpg',
+            genres: ['Metroidvania', 'Dark Fantasy', 'Action-Adventure', 'Horror', 'Action'],
+            rating: 5,
+            completed: true,
+            favorite: true,
+            steamUrl: 'https://store.steampowered.com/app/3699590/Well_Dweller/'
+        },
+        {
+            title: 'Hell is Us',
+            cover: 'imgs/hell_is_us.jpg',
+            genres: ['Action-Adventure', 'Exploration', 'Third Person', 'Action RPG', 'Souls-like'],
+            rating: 3,
+            completed: false,
+            steamUrl: 'https://store.steampowered.com/app/1620730/Hell_is_Us/'
+        },
+        {
+            title: 'Tom Clancy\'s Ghost Recon® Wildlands',
+            cover: 'imgs/tcgr_wildlands.jpg',
+            genres: ['Open World', 'Shooter', 'Action', 'Co-op', 'Tactical'],
+            rating: 1,
+            completed: false,
+            steamUrl: 'https://store.steampowered.com/app/460930/Tom_Clancys_Ghost_Recon_Wildlands/'
+        },
+        {
+            title: 'Street Fighter™ 6',
+            cover: 'imgs/street_fighter.jpg',
+            genres: ['Fighting', '2D Fighter', 'Action', 'Competitive', '3D Fighter'],
+            rating: 5,
+            completed: false,
+            steamUrl: 'https://store.steampowered.com/app/1364780/Street_Fighter_6/'
+        },
+        {
+            title: 'Inari!',
+            cover: 'imgs/inari.jpg',
+            genres: ['Sexual Content', 'Hentai', 'Nudity', 'Dating Sim', 'Story Rich'],
+            rating: 3,
+            completed: true,
+            steamUrl: 'https://store.steampowered.com/app/2639100'
+        },
+        {
+            title: 'Dead Cells',
+            cover: 'imgs/dead_cells.jpg',
+            genres: ['Adventure', 'Roguelike', 'Metroidvania', 'Action Roguelike', '2D'],
+            rating: 5,
+            completed: true,
+            steamUrl: 'https://store.steampowered.com/app/588650/Dead_Cells/'
+        },
+        {
+            title: 'BOMBANANA!',
+            cover: 'imgs/bombanana.jpg',
+            genres: ['Casual', 'Indie', 'Multiplayer', 'Co-op', 'Funny'],
+            rating: 2,
+            completed: false,
+            steamUrl: 'https://store.steampowered.com/app/4656000/BOMBANANA/'
+        },
+        {
+            title: 'Marvel\'s Wolverine',
+            cover: 'imgs/wolverine.jpg',
+            genres: ['Action', 'Superhero', 'Third Person', 'Singleplayer', 'Hack and Slash'],
+            rating: 3,
+            completed: true,
+            steamUrl: ''
+        },
+        {
+            title: 'Mewgenics',
+            cover: 'imgs/mewgenics.jpg',
+            genres: ['Turn-Based Tactics', 'Roguelike Deckbuilder', 'Tactical RPG', 'Cats', 'Roguelite'],
+            rating: 4,
+            completed: false,
+            steamUrl: 'https://store.steampowered.com/app/686060/Mewgenics/'
+        }
     ];
 
     const totalGames = exampleGames.length;
